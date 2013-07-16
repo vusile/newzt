@@ -1,0 +1,391 @@
+@charset "UTF-8";
+@import url("../style_dining.css");
+/* CSS Document */
+#upcomingeventslide {
+	position: absolute;
+	width: 600px;
+	margin: 0px 5px 0px 220px;
+	padding: 8px;
+	float:left;
+	text-align: center; /* orizzontale */
+}
+#homerow1 {
+	
+	width: 1020px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	float:left;
+}
+#homerow2 {
+	
+	width: 1020px;
+	margin: 0px 5px 0px 0px;
+	padding: 8px;
+}
+#homerow3 {
+	
+	width: 1020px;
+	margin: 20px 5px 0px 0px;
+	padding: 8px;
+	text-align:center;
+}
+#homerow4 {
+	
+	width: 1020px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	text-align:center;
+}
+#homerow5 {
+	
+	width: 1020px;
+	margin: 0px 0px 0px 0px;
+	padding-left: 8px;
+	text-align:center;
+}
+.container {
+	width: 580px;
+	position: relative;
+	float:left;
+	padding:10px 0px 0px 0px;
+	text-align:center;
+}
+.precontainer_tab {
+	width: 580px;
+	overflow: visible;
+	position: relative;
+	visibility: visible;
+	z-index: 1;
+	float:left !important; 	
+}
+.container_tab {
+	width: 500px;
+	overflow: visible;
+	position: relative;
+	visibility: visible;
+	margin-left:40px;
+	padding-top: 20px;	
+}
+	
+#columncontent {
+	/*position: absolute;*/
+	width: 600px;
+	padding-top: 30px;
+	float: left;
+	line-height: 15px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+/*	margin-left: 210px;*/
+	top: 1px;
+}
+#directorytitle {
+	position: absolute;
+	width: 600px;
+	padding: 10px;
+	float: left;
+	line-height: 15px;
+	margin-top: 0px;
+	margin-right: 5px;
+	margin-bottom: 0px;
+	margin-left: 200px;
+}
+
+#welcometext{
+	padding-top:18px;
+	padding-left:20px;
+	padding-right:20px;
+	color:#FFF
+	
+}
+#welcometext div {
+	float:left;
+	
+	
+
+}
+
+/*this is the title in the box for section and categories*/
+h1, h2, h3, h4, h5, h6 {
+letter-spacing: 0px;
+display: block;
+outline: 0;
+text-decoration: none;
+}
+
+h1{
+	font-size: 17px;
+	line-height: 18px;
+	letter-spacing: -1px !important;
+	text-transform:capitalize;}
+	
+h2{
+	font-size: 13px;
+	line-height: 14px;
+	text-transform:uppercase;
+	}
+	
+h3{
+	font-size: 15px;
+	line-height: 18px;
+	text-transform: capitalize;
+	}
+h4{
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	letter-spacing: -1px !important;
+}
+h5{
+	font-size: 13px;
+	line-height: 16px;
+	text-transform: uppercase;
+}
+h6{
+	font-size: 11px;
+	line-height: 13px;
+}
+
+/*this is the main element in the side bar and where is required a box with same standard text centered and padded */
+#box_left {
+	width: 210px;
+	overflow: hidden;
+	float:left;
+	padding:10px 0px 10px 0px;
+	text-align: center;
+	 /* orizzontale */
+}
+
+#box_left div {
+	font-size: 11px;
+	line-height: 12px;
+	text-align: center !important; 
+}
+
+#box_left li img 
+{	margin-top: 5px;
+	border:#CCC solid 1px;
+}
+
+#box_left a{
+	display: block;
+	cursor:pointer;
+}
+
+/*css for box left easy and they are the starter for all other boxes*/
+
+#box_event {
+	width: 180px;
+	overflow: hidden;
+	float: left;
+	padding:30px 20px 10px 10px;
+	text-align: center; /* orizzontale */
+	
+}
+#box_event img{
+	border:#CCC solid 1px;
+	
+}
+
+/*I've to check if used*/
+#box_right {
+	width: 210px;
+	overflow: hidden;
+	float: right;
+	padding:30px 20px 0px 0px;
+	text-align: center; /* orizzontale */
+}
+#box_right li img 
+{margin-top: 5px;
+}
+/*only for right side banner*/
+#box_banner {
+	max-width: 220px;
+	max-height:100%
+	overflow: hidden;
+	float:left;
+	padding:20px 0px 0px 0px;
+	text-align: center; /* orizzontale */
+}
+
+/*INDEX + PAGES SIDEBAR*/
+#sidebar {
+	width: 220px;
+	float: left;
+	margin-left: auto; margin-right: auto;
+	display:block;
+	padding-left:0px;
+	padding-top:20px;
+}
+#sidebar ul {
+	list-style: none;
+}
+
+#sidebar ul li {
+	padding: 10px 0 10px 0;
+}
+
+#sidebar ul li.first {
+	padding-top: 0;
+	border-top: 0;
+}
+/*INDEX + BANNER SIDEBAR RIGHT*/
+#sidebar2 {
+	width: 200px;
+	float: left;
+	margin-right:0px;
+	clear: none;
+}
+
+#sidebar2 ul {
+	list-style: none;
+}
+
+#sidebar2 ul li {
+	padding: 20px 0 20px 0;
+}
+
+#sidebar2 ul li.first {
+	padding-top: 0;
+	border-top: 0;
+}
+/*text extra style*/
+.smallcap {
+	font-variant: normal;
+	font-weight: 700;
+	text-transform: lowercase;
+}
+.smallcategory {
+	font-variant: normal;
+	font-weight: 600;
+	line-height: 12px;
+	text-transform: none;
+	color: #22558F;
+}
+.smallcategorynormal {
+	font-variant: normal;
+	font-weight: 200;
+	text-transform: capitalize;
+	line-height: 12px;
+}
+.smallbreadcrumbs {
+	font-variant: normal;
+	font-weight: 500;
+	font-size: 12px;
+	text-transform:capitalize;
+	line-height: 12px;
+	color: #4A7D81;
+	
+}
+.uppercap {
+	font-variant: normal;
+	font-weight: 700;
+	text-transform: uppercase;}
+	
+	
+.titlecategory {
+	font-variant: normal;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 16px;
+	color: #000000;
+}
+	
+.itemcenter {
+		text-align: center; /* orizzontale */
+		float:center;}
+		
+		/*BUSINESS PAGE*/
+		
+		.business {
+	width: 100%;
+	position: relative;
+	margin-left: auto; margin-right: auto;
+	display:block;
+	line-height: 15px;
+}
+
+.business ul 
+		{list-style-type: none; 
+		padding:10px;
+		}
+		
+.business li 
+{border: solid 1px #ccc; 
+display: inline-block; 
+width: 185px; 
+padding: 15px; 
+margin: 7px 3px;  
+vertical-align: text-top; 
+text-align: center; 
+zoom: 1; 
+*display: inline;
+float:left;
+min-height: 250px;}
+ 
+.business li img 
+{margin-top: 5px;
+border:#CCC solid 1px}
+
+.business h2 {
+	font-size: 12px !important;
+	line-height: 14px;
+}
+.business select 
+{width: 170px; 
+background: #fff; 
+border: solid 1px #ffffff; 
+margin: 10px 0;}
+
+/* another exception for zoom boc YOU MAY ALSO LIKE */
+
+.zoomreccomend h2 {
+	color:#0D4E91;
+	font-weight: normal;
+	margin: 0;
+	text-transform: uppercase;
+	font-variant: small-caps;
+	background-color:#eee;
+}
+
+/*DIRECTORY RESTAURANTS AND NIGHTLIFE + ARTS & ENTERTAINMENT*/
+
+
+/*DIRECTORY TOURISM*/
+.tourism 
+{
+	display: inline-block;
+	width: 600px;
+	padding: 10px;
+	margin: 0px 0px;
+	vertical-align: text-top;
+	text-align: left;
+	zoom: 1;
+	*display: inline;
+	float: left;}
+	
+	.tourism li {
+  min-width: 270px;
+  max-width: 280px;
+  min-height: 155px;
+  max-height: 160px;
+  border: solid 1px #ccc;
+  margin: 5px 3px;
+}
+
+.tourism li img  {
+  float: left;
+  margin: 0 10px 0 10px;
+}
+.tourism div
+{
+  float: left;
+}
+
+.tourism h2 {
+	font-size: 12px !important;
+	line-height: 14px;
+	font-variant: small-caps!important;
+}
+
+	

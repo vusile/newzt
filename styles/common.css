@@ -1,0 +1,805 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html
+{height: 100%; 
+border: 0; 
+padding: 0; 
+margin: 0; 
+}
+
+body{ 
+height: 100%; 
+margin: 0; 
+padding: 0; 
+border: 0; 
+font-size: 12px;
+line-height: 15px;
+background: #FFFFFF;
+background-attachment:fixed;
+font-family: Arial, Geneva, sans-serif
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {text-decoration: none;
+color:#22558F;}
+
+a:hover {
+	text-decoration: underline;
+}
+a:visited {
+	color:#22558F;
+}
+br.clear {
+	clear: both;
+}
+
+#page {
+	position: relative;
+	width: 1024px;
+	margin: 0 auto;
+	/*border: thin solid #999;
+	min-height:100%;
+	max-height:100%;*/
+	background:#FFF;
+	height:auto;
+	min-height:100%;
+	
+}
+/*header for the homepage with 2 small banners  180x 150 on both side*/
+#header {
+	position: relative;
+	padding: 0px;
+	max-height: 190px;
+}
+
+#header div{
+	float:left;
+	min-width:330px;
+	
+}
+
+#header .smallads{
+	margin-top:18px;
+}
+/*header sidewide with a banner  728x 90 right align*/
+#headersitewide {
+	position: relative;
+	height:100px;
+	vertical-align:middle !important;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	
+}
+
+#headersitewide div{
+/*	float:left;
+	width: 30%;*/
+}
+/*loginbar out of header*/
+
+#loginbar {
+	top:0px;
+	position: relative;
+	height: 30px;
+	padding-top: 5px;
+	background-color: #255C9B;
+}
+#loginbutton {
+	position: absolute;
+	height: 25px;
+	width:auto;
+	background: #497d80;
+	padding: 5px 15px 5px;
+	margin-left:20%;
+	font-size:11px;
+	text-transform:uppercase;
+}
+#loginbutton a{
+	color: #fff;
+	}
+
+
+#loginbutton a:hover{
+	color: #eee;
+	}
+	
+#searchbutton {
+	text-align: left;
+	position: absolute;
+	height: 25px;
+	width: 600px;
+	/*background: #497d80;*/
+	padding: 5px 15px 5px;
+	margin-left: 40%;
+	font-size: 11px;
+	left: -15px;
+}
+
+/*logo and banner I don't need anymore*/
+
+#logo {
+	text-align: left;
+	position: relative;
+	margin-top: 8px;
+	max-height:126px;
+}
+
+#banner {
+	position: relative;
+	padding-top: 10px;
+	left: 0;
+	}
+	
+/* on the top before the main content anywhere in the page*/
+	.bannerextrapage {
+		position: relative;
+		width: 1020px;
+		margin: 0;
+		top: 0;
+		text-align:center;
+		padding-top:0;
+		padding-bottom: 10px;
+		}
+
+/* it's the box for all main content*/	
+	
+#main {
+	position: relative;
+	padding-top: 0px;
+	z-index:!important 5;
+	width: 100%; 
+	min-height: 100%;
+    height: auto !important;
+    height: 100%;
+}
+
+#main ul {
+	list-style: none;
+}
+
+#main ul li {
+	padding: 10px 0 10px 0;
+}
+
+#main ul li.first {
+	padding-top: 0;
+	border-top: 0;
+}	
+
+/*pagination style for classifieds, jobs, real estate and vehicles*/
+
+
+.pagination {
+  	margin: 8px auto;
+    text-align: centered;
+    width:100%; 
+}
+
+.pagination ul {
+  display: inline-block;
+  *display: inline;
+  margin-bottom: 0;
+  margin-left: 0;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  *zoom: 1;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.pagination ul > li {
+  display: inline;
+}
+
+.pagination ul > li > a,
+.pagination ul > li > span {
+  float: left;
+  padding: 4px 12px;
+  line-height: 20px;
+  text-decoration: none;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-left-width: 0;
+}
+
+.pagination ul > li > a:hover,
+.pagination ul > li > a:focus,
+.pagination ul > .active > a,
+.pagination ul > .active > span {
+  background-color: #f5f5f5;
+}
+
+.pagination ul > .active > a,
+.pagination ul > .active > span {
+  color: #999999;
+  cursor: default;
+}
+
+.pagination ul > .disabled > span,
+.pagination ul > .disabled > a,
+.pagination ul > .disabled > a:hover,
+.pagination ul > .disabled > a:focus {
+  color: #999999;
+  cursor: default;
+  background-color: transparent;
+}
+
+.pagination ul > li:first-child > a,
+.pagination ul > li:first-child > span {
+  border-left-width: 1px;
+  -webkit-border-bottom-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+  -webkit-border-top-left-radius: 4px;
+          border-top-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -moz-border-radius-topleft: 4px;
+}
+
+.pagination ul > li:last-child > a,
+.pagination ul > li:last-child > span {
+  -webkit-border-top-right-radius: 4px;
+          border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 4px;
+}
+
+.pagination-centered {
+  text-align: center;
+}
+
+.pagination-right {
+  text-align: right;
+}
+
+.pagination-large ul > li > a,
+.pagination-large ul > li > span {
+  padding: 11px 19px;
+  font-size: 17.5px;
+}
+
+.pagination-large ul > li:first-child > a,
+.pagination-large ul > li:first-child > span {
+  -webkit-border-bottom-left-radius: 6px;
+          border-bottom-left-radius: 6px;
+  -webkit-border-top-left-radius: 6px;
+          border-top-left-radius: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  -moz-border-radius-topleft: 6px;
+}
+
+.pagination-large ul > li:last-child > a,
+.pagination-large ul > li:last-child > span {
+  -webkit-border-top-right-radius: 6px;
+          border-top-right-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+          border-bottom-right-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -moz-border-radius-bottomright: 6px;
+}
+
+.pagination-mini ul > li:first-child > a,
+.pagination-small ul > li:first-child > a,
+.pagination-mini ul > li:first-child > span,
+.pagination-small ul > li:first-child > span {
+  -webkit-border-bottom-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+  -webkit-border-top-left-radius: 3px;
+          border-top-left-radius: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  -moz-border-radius-topleft: 3px;
+}
+
+.pagination-mini ul > li:last-child > a,
+.pagination-small ul > li:last-child > a,
+.pagination-mini ul > li:last-child > span,
+.pagination-small ul > li:last-child > span {
+  -webkit-border-top-right-radius: 3px;
+          border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+}
+
+.pagination-small ul > li > a,
+.pagination-small ul > li > span {
+  padding: 2px 10px;
+  font-size: 11.9px;
+}
+
+.pagination-mini ul > li > a,
+.pagination-mini ul > li > span {
+  padding: 0 6px;
+  font-size: 10.5px;
+}
+
+
+/* CSS Document /* only in the homepage*/*/
+#upcomingeventslide {
+	position: absolute;
+	width: 600px;
+	margin: 0px 5px 0px 220px;
+	padding: 8px;
+	float:left;
+	text-align: center; /* orizzontale */
+}
+
+
+#homerow1 {
+	
+	width: 1020px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	float:left;
+}
+#homerow2 {
+	
+	width: 1020px;
+	margin: 0px 5px 0px 0px;
+	padding: 8px;
+}
+#homerow3 {
+	
+	width: 1020px;
+	margin: 20px 5px 0px 0px;
+	padding: 8px;
+	text-align:center;
+}
+#homerow4 {
+	
+	width: 1020px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	text-align:center;
+}
+#homerow5 {
+	
+	width: 1020px;
+	margin: 0px 0px 0px 0px;
+	padding-left: 8px;
+	text-align:center;
+}
+
+/*classifieds box in the homepage*/
+
+.classifieds_box {
+	width: 730px;
+	overflow: visible;
+	position: relative;
+	visibility: visible;
+	z-index: 1;
+	float:left !important;
+	padding: 10px 0px 10px 20px;
+	
+}
+.classifieds_box div{
+	width: 335px;
+	height:200px;
+	padding: 10px 10px 10px 10px;
+	overflow: visible;
+	position: relative;
+	visibility: visible;
+	z-index: 1;
+	float:left !important;
+	border:dashed thin;
+	border-color: #ccc!important;
+	margin: 5px 3px;	
+}
+.classifieds_box ul {
+	list-style:none;}
+	
+.classifieds_box li{ 
+padding: 0;
+float:none;
+	}
+
+.classifieds_box li img{
+float:left;
+margin-right: 5px;
+margin-bottom: 5px;
+max-width:125px;
+max-height:85px;}
+
+
+.container {
+	width: 580px;
+	position: relative;
+	float:left;
+	padding:10px 0px 0px 0px;
+	text-align:center;
+}
+.precontainer_tab {
+	width: 580px;
+	overflow: visible;
+	position: relative;
+	visibility: visible;
+	z-index: 1;
+	float:left !important; 	
+}
+.container_tab {
+	width: 500px;
+	overflow: visible;
+	position: relative;
+	visibility: visible;
+	margin-left:40px;
+	padding-top: 20px;	
+}
+	
+	/*center column 600*/
+#columncontent {
+	/*position: absolute;*/
+	width: 600px;
+	padding-top: 30px;
+	float: left;
+	line-height: 15px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+/*	margin-left: 210px;*/
+}
+
+#leftwidecontent {
+	/*position: absolute;*/
+	width: 810px;
+	float: left;
+	padding-top: 30px;
+	line-height: 15px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+/*	margin-left: 210px;*/;
+}
+
+/*welcome up and down for text and other intro elements on top and bottom*/
+.welcometext, #welcometext{
+	display: block;
+	padding-top:10px;
+	padding-left:20px;
+	padding-right:20px !important;
+	min-width: 560px;
+	clear: left;
+	/*color:#FFF*/
+	
+}
+.welcometext div, #welcometext div {
+	padding-top: 0px;
+	
+}
+
+/*this is the title in the box for section and categories*/
+h1, h2, h3, h4, h5, h6 {
+letter-spacing: 0px;
+display: block;
+outline: 0;
+text-decoration: none;
+}
+
+h1{
+	font-size: 16px;
+	line-height: 18px;
+	letter-spacing: -1px !important;
+	text-transform:capitalize;}
+	
+h2{
+	font-size: 15px;
+	line-height: 16px;
+	text-transform:capitalize;
+	}
+	
+h3{
+	font-size: 14px;
+	line-height: 16px;
+	text-transform: capitalize;
+	}
+h4{
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+	letter-spacing: -1px !important;
+}
+h5{
+	font-size: 13px;
+	line-height: 16px;
+	text-transform: uppercase;
+}
+h6{
+	font-size: 11px;
+	line-height: 13px;
+}
+
+/*these are the main element in the side bar and where is required a box with same standard text centered and padded */
+
+#box_center {
+	width: 530px;
+	overflow: hidden;
+	margin: 0px 0 30px 0;
+}
+#box_left {
+	width: 210px;
+	overflow: hidden;
+	float:left;
+	padding:10px 0px 10px 0px;
+	text-align: center;
+	cursor: pointer;
+	 /* orizzontale */
+}
+#box_left div {
+	font-size: 12px;
+	text-align: center !important; 
+}
+
+#box_left li img 
+{margin-top: 5px;
+border:#CCC solid 1px;
+}
+
+#box_left a{
+	line-height: 11px;
+	display: block;
+	cursor:pointer;
+}
+#box_event {
+	width: 180px;
+	overflow: hidden;
+	float: left;
+	padding:30px 20px 10px 10px;
+	text-align: center; /* orizzontale */
+	
+}
+#box_event img{
+	border:#CCC solid 1px;
+	
+}
+
+
+/*sidebar car search*/
+#box_car {
+	width: 210px;
+	overflow: hidden;
+	float:left;
+	padding:10px 0px 0px 0px;
+	 /* orizzontale */
+}
+#box_car div{
+	
+	float:left;
+	 /* orizzontale */
+}
+#box_car ul {
+	list-style: none !important;
+}
+#box_car li {
+	font-size: 12px;
+	text-wrap:unrestricted; 
+	margin-top:5px;
+	margin-left:5px;
+	margin-right:5px;
+	min-width:180px !important;
+	min-height:25px !important;
+}
+#box_car li img 
+{margin-bottom: 3px;
+float:right;
+margin-top:-15px;
+
+}
+#box_car a{
+	display: block;
+	cursor:pointer;
+}
+
+/*banner social on hp and where is required*/
+#box_social .box_social {
+	max-width: 220px;
+	max-height:100%
+	float:left;
+	padding:0px 0px 0px 0px;
+	text-align: center; /* orizzontale */
+}
+
+.box_social img{
+	border: none !important;
+}
+
+#box_banner {
+	max-width: 210px;
+	overflow: hidden;
+	float:left;
+	padding:20px 0px 0px 0px;
+	text-align: center; /* orizzontale */
+}
+
+.box h2
+.box h3 
+.box h4 {
+	letter-spacing: 0px;
+	display: block;
+	outline: 0;
+	text-decoration: none;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+/*INDEX  and PAGES SIDEBAR left */
+#sidebar {
+	width: 220px;
+	float: left;
+	margin-left: auto; margin-right: auto;
+	display:block;
+	line-height: 15px;
+	padding-left:0px;
+	padding-top:20px;
+}
+#sidebar ul {
+	list-style: none;
+}
+
+#sidebar ul li {
+	padding: 10px 0 10px 0;
+}
+
+#sidebar ul li.first {
+	padding-top: 0;
+	border-top: 0;
+}
+
+/*FORM SEARCH ON THE LEFT SIDEBAR  classifieds, job, vahicles, real estate*/
+	#box_form {
+	width: 210px;
+	overflow: hidden;
+	float: left;
+	padding:10px 0px 0px 10px;
+	text-align: left; /* orizzontale */
+	/*border:solid #CCC 1px;*/
+	}
+	#box_form li img 
+	{margin-top: 5px;
+	}
+	
+	
+
+/*INDEX + BANNER SIDEBAR right*/
+
+#sidebar2 {
+	width: 200px;
+	float: left;
+	margin-right:0px;
+	clear: none;
+	}
+
+	#sidebar2 ul {
+	list-style: none;
+	}
+
+	#sidebar2 ul li {
+	padding: 20px 0 20px 0;
+	}
+
+	#sidebar2 ul li.first {
+	padding-top: 0;
+	border-top: 0;
+}
+
+/*possibly delete*/
+
+#directorytitle {
+	position: absolute;
+	width: 600px;
+	padding: 10px;
+	float: left;
+	line-height: 15px;
+	margin-top: 0px;
+	margin-right: 5px;
+	margin-bottom: 0px;
+	margin-left: 200px;
+}
+		
+/*I've to check if used*/
+
+
+#box_right {
+	width: 210px;
+	overflow: hidden;
+	float: right;
+	padding:30px 20px 0px 0px;
+	text-align: center; /* orizzontale */
+}
+
+#box_right li img 
+{margin-top: 5px;
+}
+
+	
+/* extraspace*/
+
+	.badreport {
+	border:none;
+	padding:0;
+	}
+
+	.pullright
+	{
+	float:right;
+	}
+
+	.pullleft
+	{
+	float:left;
+	}
+	
+	.pullcenter
+	{ 	display: block;
+    	margin-left: auto;
+    	margin-right: auto}
+	}
+	
+	.padit
+	{ 
+	padding-bottom: 10px;}
+
+	.padittop
+	{ 
+	padding-top: 10px;}
+	
+	.clear {display:block;
+		clear:both;}
+
+
+/*extra text */
+
+	.smallcap {
+	font-variant: normal;
+	font-weight: 700;
+	text-transform: lowercase;
+}
+	.smallcategory {
+	font-variant: normal;
+	font-weight: 600;
+	text-transform: none;
+	line-height: 12px;
+	color: #22558F;
+}
+	.smallcategorynormal {
+	font-variant: normal;
+	font-weight: 200;
+	text-transform: capitalize;
+	line-height: 12px;
+}
+	.uppercap {
+	font-weight: 700;
+	text-transform: uppercase;}
+	.titlecategory {
+	font-size: 16px;
+	font-weight: 600;
+	font-variant: normal;
+	text-transform: uppercase;
+	color: #000000;
+}
+	.smallbreadcrumbs {
+	font-variant: normal;
+	font-weight: 500;
+	text-transform: capitalize;
+	font-size: 12px;
+	line-height: 12px;
+	color: #4A7D81;
+	padding-bottom:10px;
+}
+		
+.error {
+	color:red;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+.show, #ELForm #firstname {
+	display:none !important;
+}

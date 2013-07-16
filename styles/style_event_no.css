@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* CSS Document */
+/*General for all categories boxes and menu for tourism*/
+	.event
+	{
+	display: inline-block;
+	width: 600px;
+	padding: 0px;
+	margin: 0px 0px;
+	vertical-align: text-top;
+	text-align: left;
+	zoom: 1;
+	*display: inline;
+	float: left;}
+
+	.event div 
+	{
+		border: solid 1px #ccc; 
+		display: inline-block; 
+		min-width: 190px;
+		max-width:190px; 
+		min-height: 230px;
+		padding: 10px; 
+		margin: 7px 3px;  
+		vertical-align: text-top; 
+			text-align: center; 
+		zoom: 1; 
+		*display: inline;
+		float:left;
+	}
+
+	.event a 
+	{ cursor:pointer;
+	}
+	
+	.event h2 {
+	font-size: 12px;
+	font-weight:bold;
+	line-height:14px;
+	}
+
+	.event div img  {
+	margin: 0 10px 0 10px;
+  	margin-top: 5px;
+  	margin-bottom: 5px;
+	border:#CCC solid 1px;
+	min-width:100px;
+	max-width:150px;
+	max-height:180px;
+}
+
+  
+
+
+
+/*CONTAINER FOR CONTENT IN LISTING DETAIL BUT ALSO LIST FOR THE SUBSECTIONS*/	
+

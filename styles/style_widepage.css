@@ -1,0 +1,192 @@
+@charset "UTF-8";
+/* CSS Document */
+/*General for all categories boxes and menu for tourism*/
+
+
+.cinema
+{	border:solid #CCC 1px;
+	display: inline-block;
+	margin: 7px 3px; 
+	width:790px;
+	padding: 10px 10px 10px; 
+	zoom: 1;
+	*display: inline;
+}
+	
+/*CHOOSE A LOCATION*/	
+	.cinema div 
+{
+	max-width:430px;
+	margin-right:20px;	
+	display: inline-block; 
+	text-align: left; 
+	float:left;
+}
+
+	.cinema ul {
+		list-style: none;
+	}
+	
+	.cinema li{
+	min-width: 200px;
+	max-width: 230px;
+	min-height:90px;
+	float:left;
+	padding-left:10px;
+	padding-top:0px !important;
+	margin:10px;
+	}
+
+	.cinema img 
+	{	
+	display: inline-block; 
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-bottom: 7px;
+	margin-top: 7px;  
+	vertical-align: text-top; 
+	text-align: left; 
+	float:left;
+	vertical-align:middle;
+	border:solid #CCC 1px;}
+	
+	.cinema h3 {
+		font-size:18px;
+		margin-top:30px;
+	}
+	
+	 .parks{
+		 background-color:#eee;
+		 
+		
+	 }
+	 
+	.arusha {
+		background-image:url(../images/park_background.jpg);
+		min-height:90px;
+		
+	}
+
+.widecontainer
+{
+	display: inline-block;
+	width: 800px;
+	margin: 0px 0px;
+	zoom: 1;
+	*display: inline;
+	float: left;}
+	
+	.widecontainer h3 a
+{text-transform:uppercase;
+}
+	
+	/* LABEL is in dining style and in widepage --- have to go in common!!!*/
+	
+	label,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"],
+	input[type="radio"],
+	input[type="checkbox"] {
+	  cursor: pointer;
+	}
+
+	label {
+	  font-size: 16px;
+	  font-weight: normal;
+	  line-height: 20px;
+  
+	}
+
+	label {
+	  display: block;
+	  margin-bottom: 5px;
+	}
+
+	.label {
+	  display: inline-block;
+	  padding: 2px 4px;
+	  font-size: 13px;
+	  font-weight: bold;
+	  line-height: 14px;
+	  margin:5px;
+	  text-transform:uppercase;
+	  color: #ffffff;
+	  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	  white-space: nowrap;
+	  vertical-align: baseline;
+	  background-color: #999999;
+	  -webkit-border-radius: 4px;
+	     -moz-border-radius: 4px;
+	          border-radius: 4px;
+	}
+	
+	.label-nationalparks {
+		  background-color: none;
+		  color: #000000;
+	}
+
+	.label:empty,
+	 {
+	  display: none;
+	}
+
+	a.label:hover,
+	a.label:focus,
+	a.badge:hover,
+	a.badge:focus {
+	  color: #ffffff;
+	  text-decoration: none;
+	  cursor: pointer;
+	}
+
+	.label-important,
+	.badge-important {
+	  background-color: #b94a48;
+	}
+
+	.label-important[href],
+	.badge-important[href] {
+	  background-color: #953b39;
+	}
+
+	.label-warning,
+	.badge-warning {
+	  background-color: #f89406;
+	}
+
+	.label-warning[href],
+	.badge-warning[href] {
+	  background-color: #c67605;
+	}
+
+	.label-success,
+	.badge-success {
+	  background-color: #468847;
+	}
+
+	.label-success[href],
+	.badge-success[href] {
+	  background-color: #356635;
+	}
+
+	.label-info,
+	.badge-info {
+	  background-color: #3a87ad;
+	}
+
+	.label-info[href],
+	.badge-info[href] {
+	  background-color: #2d6987;
+	}
+
+	.label-inverse,
+	.badge-inverse {
+	  background-color: #333333;
+	}
+
+	.label-inverse[href],
+	.badge-inverse[href] {
+	  background-color: #1a1a1a;
+	}
+	
